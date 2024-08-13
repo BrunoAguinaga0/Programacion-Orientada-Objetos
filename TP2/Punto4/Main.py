@@ -12,6 +12,7 @@ algoritimica = Materia.inicio_con_materia_y_codigo("Algoritmica","500")
 
 profesores = []
 profesor1 = Profesor("Pedro","Hernandez")
+profesor1.agregar_materia(poo)
 profesor1.agregar_materia(algebra)
 profesores.append(profesor1)
 profesor2 = Profesor("Romina","Alvarez")
