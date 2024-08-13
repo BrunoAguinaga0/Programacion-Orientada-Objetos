@@ -1,20 +1,22 @@
 
 
 class Materia:
-    def __init__(self):
-        self.__nombre = None
-        self.__codigo = None
-
-    @classmethod
-    def inicio_con_materia_y_codigo(self, nombre, codigo):
+    def __init__(self,nombre,codigo):
         self.__nombre = nombre
         self.__codigo = codigo
+
+    @classmethod
+    def inicio_con_materia(cls, nombre):
+        materia = cls.__new__(cls)
+        materia.__nombre = nombre
+        materia.__codigo = None
+        return materia
     
     @property
-    def nombre(self):
+    def nombremateria(self):
         return self.__nombre
     
-    @nombre.setter
+    @nombremateria.setter
     def nombre(self, nombre):
         self.__nombre = nombre
 
