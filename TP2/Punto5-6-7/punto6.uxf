@@ -1,0 +1,31 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>320</x><y>60</y><w>270</w><h>290</h></coordinates><panel_attributes>Persona
+Package: TP2
+--
+Atributos:
+-nombre: string
+-apellido: string
+-fechaDeMacimiento: datetime
+--
+--
+Constructor:
+__init__:(nombre,apellido, fechaDeNacimiento)
+--
+Metodos:
+getNombre()
+setNombre(nombre)
+getApellido()
+setApellido(apellido)
+getFecha()
+setFecha(fecha)
+__str__()
+calculoEdad()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>430</y><w>210</w><h>70</h></coordinates><panel_attributes>_objecto: Persona
+--
+nombre: Bruno
+apellido: Aguinaga
+fechaDeNacimiento: 28/10/2001</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>430</y><w>210</w><h>70</h></coordinates><panel_attributes>_objecto: Persona
+--
+nombre: Alan
+apellido: Viera
+fechaDeNacimiento: 24/07/2002</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>340</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>130;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>340</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element></diagram>
