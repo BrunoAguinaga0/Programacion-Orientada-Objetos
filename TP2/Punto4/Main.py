@@ -25,3 +25,4 @@ for pro in profesores:
     print ("Materias:")
     for mat in pro.materia():
         print(mat.nombre())
+        
