@@ -2,8 +2,8 @@
 
 class Materia:
     def __init__(self,nombre,codigo):
-        self.__nombre = nombre
-        self.__codigo = codigo
+        self.__nombre = codigo
+        self.__codigo = nombre
 
     @classmethod
     def inicio_con_materia(cls, nombre):
@@ -17,7 +17,7 @@ class Materia:
         return self.__nombre
     
     @nombremateria.setter
-    def nombre(self, nombre):
+    def nombremateria(self, nombre):
         self.__nombre = nombre
 
     @property
@@ -27,4 +27,3 @@ class Materia:
     @codigo.setter
     def codigo(self, codigo):
         self.__codigo = codigo
-    

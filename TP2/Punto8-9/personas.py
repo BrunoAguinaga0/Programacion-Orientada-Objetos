@@ -7,7 +7,21 @@ class Persona:
         self.__edad = edad
         self.__trabajo = None
         self.__estudio = None
+        self.__permisotrabajo = None
+        self.__permisomanejar = None
+    
+    def getpermisotrabajo(self):
+        return self.__permisotrabajo
+    
+    def setpermisotrabajo(self,trabajo):
+        self.__permisotrabajo = trabajo
+    
+    def getpermisomanejar(self):
+        return self.__permisomanejar
         
+    def setpermisomanejar(self,manejar):
+        self.__permisomanejar = manejar
+    
     def getNombre(self):
         return self.__nombre
     
