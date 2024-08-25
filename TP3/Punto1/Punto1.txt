@@ -1,0 +1,2 @@
+Un ejemplo puede ser una superclase casa, un metodo habitaciones y despues una subclase
+habitacion, que detalle que podria tener cada habitacion

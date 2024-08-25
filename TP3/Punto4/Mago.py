@@ -6,7 +6,11 @@ class mago:
     def __init__(self,vida,nivelAtaque,nivelDefensa) -> None:
         super().__init__(vida,nivelAtaque,nivelDefensa)
         
+
     @classmethod
-    def Constructor(cls, none, nivelAtaque, NivelDefensa):
+    def Constructor(cls, nivelAtaque, NivelDefensa):
         NuevoMago = (cls, cls.VIDA_POR_DEFECTO,nivelAtaque,NivelDefensa)
         return NuevoMago
+
+    def defender(self,ataque):
+        
