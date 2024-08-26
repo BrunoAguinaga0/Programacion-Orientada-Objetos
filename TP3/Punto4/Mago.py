@@ -1,16 +1,23 @@
 from Personaje import Personaje
 
 
-class mago:
-    VIDA_POR_DEFECTO = 100
-    def __init__(self,vida,nivelAtaque,nivelDefensa) -> None:
-        super().__init__(vida,nivelAtaque,nivelDefensa)
+VIDA_MAGO: int = 100
+
+class Mago(Personaje):
+
+
+    def __init__(self, nombre, nivelAtaque, nivelDefensa):
+        super().__init__(nombre,VIDA_MAGO, nivelAtaque, nivelDefensa)
+
+
+    def defender(self, ataque):
+        self._vida = self._vida + self._nivelDefensa - ataque
+        print(f"El personaje {self._nombre} tiene {self._vida} de vida")
+        if self._vida < 1:
+            print("El personaje {} ha muerto".format(self._nombre))
         
+    def atacar(self): #Agrege una extencion del metodo atacar de la clase padre
+        atacar2 = super.atacar() + 35 #suma + 25 de daño al daño original
+        return atacar2
 
-    @classmethod
-    def Constructor(cls, nivelAtaque, NivelDefensa):
-        NuevoMago = (cls, cls.VIDA_POR_DEFECTO,nivelAtaque,NivelDefensa)
-        return NuevoMago
-
-    def defender(self,ataque):
         
