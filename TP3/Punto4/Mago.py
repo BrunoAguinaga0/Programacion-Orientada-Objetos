@@ -1,13 +1,13 @@
 from Personaje import Personaje
 
 
-VIDA_MAGO: int = 100
+vida_mago: int = 100
 
 class Mago(Personaje):
 
 
     def __init__(self, nombre, nivelAtaque, nivelDefensa):
-        super().__init__(nombre,VIDA_MAGO, nivelAtaque, nivelDefensa)
+        super().__init__(nombre,vida_mago, nivelAtaque, nivelDefensa)
 
 
     def defender(self, ataque):
