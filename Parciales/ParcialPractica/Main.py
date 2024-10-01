@@ -6,8 +6,8 @@ import random
 
 
 habilidadesEspeciales = ["Ataque","Pase","Defensa"]
-listaClubes = ["Arsenal","River Plate","Inter Miami","Manchester City"]
-listaPaises = ["Argentina","Holanda","Inglaterra","Japon"]
+listaClubes = ["Arsenal","River Plate","Manchester City"]
+listaPaises = ["Argentina","Holanda","Inglaterra"]
 jugadores = []
 plantilla1 = []
 plantilla2 = []
@@ -15,12 +15,12 @@ plantilla2 = []
 for i in range (0,22):
     numeroRandom = int(random.randint(1,3))
     if numeroRandom == 1:
-        jugadores.append(BronceEspecial(f"Jugador {i+1}",listaClubes[random.randint(0,3)],listaPaises[random.randint(0,3)],habilidadesEspeciales[random.randint(0,2)]))
+        jugadores.append(BronceEspecial(f"Jugador {i+1}",listaClubes[random.randint(0,2)],listaPaises[random.randint(0,2)],habilidadesEspeciales[random.randint(0,2)]))
     elif numeroRandom == 2:
-        jugadores.append(Oro(f"Jugador{i+1}",listaClubes[random.randint(0,3)],listaPaises[random.randint(0,3)]))
+        jugadores.append(Oro(f"Jugador{i+1}",listaClubes[random.randint(0,2)],listaPaises[random.randint(0,2)]))
     else:
         random.shuffle(habilidadesEspeciales)
-        jugadores.append(Especial(f"Jugador{i+1}",listaClubes[random.randint(0,3)],listaPaises[random.randint(0,3)],habilidadesEspeciales[0:2]))
+        jugadores.append(Especial(f"Jugador{i+1}",listaClubes[random.randint(0,2)],listaPaises[random.randint(0,2)],habilidadesEspeciales[0:2]))
 
 
 random.shuffle(jugadores)
