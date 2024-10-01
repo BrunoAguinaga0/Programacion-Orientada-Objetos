@@ -8,6 +8,6 @@ class BronceEspecial(Carta):
     def _generarAtributos(self):
         return int(random.randint(49,65) + 2)
     
-    def imprimirCarta(self):
-        super().imprimirCarta()
-        print(f'Habilidad Especial: {self._habilidadEspecial}')
+    def imprimirCarta(self,pais,club):
+        super().imprimirCarta(pais,club)
+        print(f'Habilidad Especial: {self._habilidadesEspeciales}')

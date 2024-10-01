@@ -4,9 +4,6 @@ import random
 class Fuego(Pokemon):
     def __init__(self, nombre):
         super().__init__(nombre,"fuego","agua")	
-        #self._tipo = "fuego"
-        #self._debilidad = "agua"
-        
 
     def defender(self,ataque):
         if ataque > self._defensa:

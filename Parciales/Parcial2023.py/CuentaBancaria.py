@@ -1,7 +1,7 @@
 from cuenta import Cuenta
 
 
-class Banco(Cuenta):
+class CuentaBancaria(Cuenta):
     def __init__(self, nombre, saldo, nroCuenta, cbu):
         super().__init__(nombre, saldo, nroCuenta)
         self._cbu = cbu

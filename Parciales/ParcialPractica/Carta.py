@@ -18,13 +18,15 @@ class Carta(ABC):
     def _generarAtributos(self):
         pass
     
-    def imprimirCarta(self):
+    def imprimirCarta(self,pais,club):
+        print("====================================")
         print(f"Nombre: {self._nombre} - Club: {self._club} - Pais: {self._pais}")
         print(f"Velocidad: {self._velocidad} - Tiro: {self._tiro}")
         print(f"Regate: {self._regate} - Defensa: {self._defensa}")
         print(f"Pase: {self._pase} - Fisico: {self._fisico}")
+        print(f"Quimica Jugador: {self.calcularQuimica(pais,club)}")
     
-    def calcularQumica(self,paisFavorito,clubFavorito):
+    def calcularQuimica(self,paisFavorito,clubFavorito):
         if self._club == clubFavorito and self._pais == paisFavorito:
             return 100
         elif self._club == clubFavorito or self._pais == paisFavorito:

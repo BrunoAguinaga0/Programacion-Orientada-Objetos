@@ -5,8 +5,6 @@ import random
 class Agua(Pokemon):
     def __init__(self, nombre):
         super().__init__(nombre,"agua","hierba")
-        #self._tipo = "agua"
-        #self._debilidad = "hierba"
 
     def atacar(self, pokemonAtacado):
         if pokemonAtacado.debilidad() == self._tipo:

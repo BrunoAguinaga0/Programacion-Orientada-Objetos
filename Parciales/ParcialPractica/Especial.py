@@ -13,11 +13,9 @@ class Especial(Carta):
             return 99
     
     
-    def imprimirCarta(self):
-        super().imprimirCarta()
-        print("Habilidades Especiales:")
-        for habilidad in self._habilidadEspecial:
-            print(f'{habilidad}')
+    def imprimirCarta(self,pais,club):
+        super().imprimirCarta(pais,club)
+        print("Habilidades Especiales: " + "-".join(self._habilidadesEspeciales))
     
     
     def calcularQumica(self, paisFavorito, clubFavorito):
