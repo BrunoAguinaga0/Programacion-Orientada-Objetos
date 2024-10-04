@@ -15,3 +15,4 @@ class Usuario:
         for perfil in self.__perfil:
             perfil.imprimir()
     
+    

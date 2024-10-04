@@ -20,3 +20,4 @@ perfil1.agregar_multimedia(pelicula2)
 cuenta.agregar_perfil(perfil1)
 
 cuenta.imprimir_perfiles()
+cuenta.__perfil
