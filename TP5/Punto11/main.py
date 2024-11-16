@@ -15,6 +15,6 @@ if __name__ == "__main__":
     # CAJA SUSPENDIDA
     print("--------- CAJA SUSPENDIDA ---------")
     caja.suspender_caja()
-    caja.atender_persona(5, "Pedro", 30)
-    caja.atender_persona(6, "Luis", 70)
-    caja.atender_persona(7, "Maria", 64)
+    caja.atender_persona(5, "Bruno", 30)
+    caja.atender_persona(6, "Jorge", 70)
+    caja.atender_persona(7, "Nicolas", 64)
