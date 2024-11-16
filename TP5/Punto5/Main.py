@@ -1,6 +1,10 @@
 from Director import Director
 from BuilderTorta import BuilderTorta
-from ConcreteBuilderTorta import ConcreteBuilderTortaVainilla
+from ConcreteBuilders import (
+    ConcreteBuilderTortaVainilla,
+    ConcreteBuilderTortaCoco,
+    ConcreteBuilderTortaChocolate,
+)
 
 
 director = Director()
@@ -9,4 +13,25 @@ director.builder = builder
 
 print("Armado de torta: ")
 director.build_torta()
-builder.get_torta.lista_partes()
+Torta1 = builder.get_torta()
+print(Torta1)
+
+print("----------------------------------------")
+
+builder2 = ConcreteBuilderTortaCoco()
+director.builder = builder2
+
+print("Armado de torta: ")
+director.build_torta()
+Torta2 = builder2.get_torta()
+print(Torta2)
+
+print("----------------------------------------")
+
+builder3 = ConcreteBuilderTortaChocolate()
+director.builder = builder3
+
+print("Armado de torta: ")
+director.build_torta()
+Torta3 = builder3.get_torta()
+print(Torta3)
