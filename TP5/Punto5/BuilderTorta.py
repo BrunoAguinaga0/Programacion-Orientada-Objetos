@@ -2,8 +2,6 @@ from abc import ABC, abstractmethod
 
 
 class BuilderTorta(ABC):
-    @property
-    @abstractmethod
     def get_torta(self) -> None:
         pass
 
